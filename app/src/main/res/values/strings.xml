@@ -2,7 +2,6 @@
     <string name="app_name">Laboratorio_1_PlayList</string>
     <string name="buscar">Buscar</string>
     <string name="nombre">Nombre</string>
-    <string name="agregar">Agregar</string>
     <string name="descendente">Descendente</string>
     <string name="ascendente">Ascendente</string>
     <string name="orden">Orden</string>

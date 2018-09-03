@@ -3,9 +3,9 @@ package com.example.sthephan.laboratorio_1_playlist;
 import java.util.HashMap;
 
 public class Diccionario {
-    public HashMap<String, Cancion> diccionario = new HashMap<String, Cancion>();
+    //public HashMap<String, Cancion> diccionario = new HashMap<String, Cancion>();
 
-    public void llenarDiccionario(){
+    public static void llenarDiccionario(HashMap<String, Cancion> diccionario){
         Cancion c1 = new Cancion();
         c1.setNombre("AllStar");
         c1.setAutor("SmashMouth");
@@ -27,7 +27,7 @@ public class Diccionario {
 
     }
 
-    public void agregarDiccionario(String nombre, String autor, int anno, int tiempo){
+    public static void agregarDiccionario(String nombre, String autor, int anno, int tiempo, HashMap<String, Cancion> diccionario){
         Cancion c = new Cancion();
         c.setNombre(nombre);
         c.setAutor(autor);
