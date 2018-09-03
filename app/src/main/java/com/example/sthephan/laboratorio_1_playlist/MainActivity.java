@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        Diccionario dic = new Diccionario();
+        dic.llenarDiccionario();
     }
 
     @OnClick({R.id.btnBuscar, R.id.btnAgregar})
