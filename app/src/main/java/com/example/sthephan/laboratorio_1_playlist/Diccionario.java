@@ -17,12 +17,13 @@ public class Diccionario {
         c2.setTiempo(3);
         c2.setAnno(2000);
         Cancion c3 = new Cancion();
-        c3.setNombre("AllStar");
-        c3.setAutor("SmashMouth");
+        c3.setNombre("Darude");
+        c3.setAutor("SandStorm");
         c3.setTiempo(2);
-        c3.setAnno(2000);
+        c3.setAnno(1999);
         diccionario.put("AllStar", c1);
         diccionario.put("Faint", c2);
+        diccionario.put("Darude", c3);
 
     }
 
