@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:id="@+id/auCancion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomCancion"
+        android:text="Autor" />
+
+    <TextView
+        android:id="@+id/nomCancion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Titulo Cancion"
+        android:textAppearance="@android:style/TextAppearance" />
+
+    <TextView
+        android:id="@+id/durCancion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/auCancion"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:text="Duracion" />
+
+    <TextView
+        android:id="@+id/annoCancion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/auCancion"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:text="Año" />
+
+</RelativeLayout>
