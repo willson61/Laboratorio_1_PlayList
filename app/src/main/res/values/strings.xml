@@ -2,7 +2,10 @@
     <string name="app_name">Laboratorio_1_PlayList</string>
     <string name="buscar">Buscar</string>
     <string name="nombre">Nombre</string>
-    <string name="descendente">Descendente</string>
-    <string name="ascendente">Ascendente</string>
-    <string name="orden">Orden</string>
+    <string name="busqueda">Busqueda:</string>
+    <string name="mi_playlist">Mi PlayList:</string>
+    <string name="ascendentemente_por_nombre">Ascendentemente por Nombre</string>
+    <string name="ascendentemente_por_duracion">Ascendentemente por Duracion</string>
+    <string name="descendentemente_por_nombre">Descendentemente por Nombre</string>
+    <string name="descendentemente_por_duracion">Descendentemente por Duracion</string>
 </resources>

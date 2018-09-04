@@ -62,9 +62,9 @@ public class AdapterCancion extends BaseAdapter{
             TextView autor = (TextView)v.findViewById(R.id.auCancion);
             autor.setText(c.getAutor());
             TextView duracion = (TextView)v.findViewById(R.id.durCancion);
-            duracion.setText(Double.toString(c.getTiempo()));
+            duracion.setText(Double.toString(c.getTiempo()) + "m");
             TextView anno = (TextView)v.findViewById(R.id.annoCancion);
-            anno.setText(Integer.toString(c.getAnno()));
+            anno.setText("Año: " + Integer.toString(c.getAnno()));
         }
 
         return v;

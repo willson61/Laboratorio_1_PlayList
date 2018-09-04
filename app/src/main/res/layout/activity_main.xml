@@ -18,17 +18,6 @@
         tools:layout_editor_absoluteX="22dp"
         tools:layout_editor_absoluteY="16dp" />
 
-    <Switch
-        android:id="@+id/swOrden"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="false"
-        android:text="@string/orden"
-        android:textOff="@string/descendente"
-        android:textOn="@string/ascendente"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="118dp" />
-
     <Button
         android:id="@+id/btnBuscar"
         android:layout_width="wrap_content"
@@ -37,17 +26,71 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="70dp" />
 
-    <ListView
-        android:id="@+id/lstCanciones"
-        android:layout_width="368dp"
-        android:layout_height="56dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="341dp" />
+    <TextView
+        android:id="@+id/labelBusqueda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/busqueda"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
 
     <ListView
         android:id="@+id/lstBusqueda"
         android:layout_width="368dp"
-        android:layout_height="318dp"
+        android:layout_height="57dp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="165dp" />
+
+    <TextView
+        android:id="@+id/labelPlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mi_playlist"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+    <RadioGroup
+        android:id="@+id/rgOrden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/btAscendenteNom"
+            style="@android:style/Widget.CompoundButton.RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ascendentemente_por_nombre"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <RadioButton
+            android:id="@+id/btAscendenteDur"
+            style="@android:style/Widget.CompoundButton.RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ascendentemente_por_duracion"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <RadioButton
+            android:id="@+id/btDescendenteNom"
+            style="@android:style/Widget.CompoundButton.RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descendentemente_por_nombre"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <RadioButton
+            android:id="@+id/btDescendenteDur"
+            style="@android:style/Widget.CompoundButton.RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descendentemente_por_duracion"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    </RadioGroup>
+
+
+    <ListView
+        android:id="@+id/lstCanciones"
+        android:layout_width="368dp"
+        android:layout_height="318dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="341dp" />
 </LinearLayout>
