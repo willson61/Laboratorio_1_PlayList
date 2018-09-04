@@ -64,12 +64,20 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case R.id.btAscendenteNom:
+                Ordenamiento.ordenamientoAscC(lstPlaylist);
+                lstCanciones.setAdapter(adapter2);
                 break;
             case R.id.btAscendenteDur:
+                Ordenamiento.ordenamientoAscT(lstPlaylist);
+                lstCanciones.setAdapter(adapter2);
                 break;
             case R.id.btDescendenteNom:
+                Ordenamiento.ordenamientoDesc(lstPlaylist);
+                lstCanciones.setAdapter(adapter2);
                 break;
             case R.id.btDescendenteDur:
+                Ordenamiento.ordenamientoDescT(lstPlaylist);
+                lstCanciones.setAdapter(adapter2);
                 break;
         }
     }

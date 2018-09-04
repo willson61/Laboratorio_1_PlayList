@@ -6,17 +6,17 @@ import java.util.ArrayList;
 
 public class Ordenamiento {
 
-    public static void ordenamientoAscT(ArrayList<Integer> lista){
+    public static void ordenamientoAscT(ArrayList<Cancion> lista){
         int n = lista.size();
         int i = 1;
         boolean ordenado = false;
         while (i < n && !ordenado){
             i++;
             ordenado = true;
-            for(int j = 0; j <= n-1; j++){
-                if (lista.get(j) > lista.get(j+1)) {
+            for(int j = 0; j < n-1; j++){
+                if (lista.get(j).tiempo > lista.get(j+1).tiempo) {
                     ordenado = false;
-                    int aux = lista.get(j);
+                    Cancion aux = lista.get(j);
                     lista.set(j, lista.get(j+1));
                     lista.set(j+1, aux);
                 }
@@ -24,17 +24,17 @@ public class Ordenamiento {
         }
     }
 
-    public static void ordenamientoDescT(ArrayList<Integer> lista) {
+    public static void ordenamientoDescT(ArrayList<Cancion> lista) {
         int n = lista.size();
         int i = 1;
         boolean ordenado = false;
         while (i < n && !ordenado){
             i++;
             ordenado = true;
-            for(int j = 0; j <= n-1; j++){
-                if (lista.get(j) < lista.get(j+1)) {
+            for(int j = 0; j < n-1; j++){
+                if (lista.get(j).tiempo < lista.get(j+1).tiempo) {
                     ordenado = false;
-                    Integer aux = lista.get(j);
+                    Cancion aux = lista.get(j);
                     lista.set(j, lista.get(j+1));
                     lista.set(j+1, aux);
                 }
@@ -42,17 +42,17 @@ public class Ordenamiento {
         }
     }
 
-    public static void ordenamientoAscC(ArrayList<String> lista){
+    public static void ordenamientoAscC(ArrayList<Cancion> lista){
         int n = lista.size();
         int i = 1;
         boolean ordenado = false;
         while (i < n && !ordenado){
             i++;
             ordenado = true;
-            for(int j = 0; j <= n-1; j++){
-                if (lista.get(j).compareTo(lista.get(j+1)) > 0) {
+            for(int j = 0; j < n-1; j++){
+                if (lista.get(j).nombre.compareTo(lista.get(j+1).nombre) > 0) {
                     ordenado = false;
-                    String aux = lista.get(j);
+                    Cancion aux = lista.get(j);
                     lista.set(j, lista.get(j+1));
                     lista.set(j+1, aux);
                 }
@@ -60,17 +60,17 @@ public class Ordenamiento {
         }
     }
 
-    public static void ordenamientoDesc(ArrayList<String> lista){
+    public static void ordenamientoDesc(ArrayList<Cancion> lista){
         int n = lista.size();
         int i = 1;
         boolean ordenado = false;
         while (i < n && !ordenado){
             i++;
             ordenado = true;
-            for(int j = 0; j <= n-1; j++){
-                if (lista.get(j).compareTo(lista.get(j+1)) < 0) {
+            for(int j = 0; j < n-1; j++){
+                if (lista.get(j).nombre.compareTo(lista.get(j+1).nombre) < 0) {
                     ordenado = false;
-                    String aux = lista.get(j);
+                    Cancion aux = lista.get(j);
                     lista.set(j, lista.get(j+1));
                     lista.set(j+1, aux);
                 }
