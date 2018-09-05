@@ -58,9 +58,15 @@ public class MainActivity extends AppCompatActivity {
                     message.show();
                 } else {
                     Cancion c1 = canciones.get(txtNombre.getText().toString());
-                    lstBusCancion.clear();
-                    lstBusCancion.add(c1);
-                    lstBusqueda.setAdapter(adapter1);
+                    if(c1 != null){
+                        lstBusCancion.clear();
+                        lstBusCancion.add(c1);
+                        lstBusqueda.setAdapter(adapter1);
+                    }
+                    else{
+                        Toast message1 = Toast.makeText(getApplicationContext(), "El nombre de la cancion no ha sido encontrado", Toast.LENGTH_LONG);
+                        message1.show();
+                    }
                 }
                 break;
             case R.id.btAscendenteNom:
@@ -94,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
             }
             if (val == true) {
                 lstPlaylist.add(lstBusCancion.get(0));
+                Ordenamiento.ordenamientoAscC(lstPlaylist);
                 lstCanciones.setAdapter(adapter2);
             }
             lstCanciones.setAdapter(adapter2);

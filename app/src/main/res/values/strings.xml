@@ -8,4 +8,11 @@
     <string name="ascendentemente_por_duracion">Ascendentemente por Duracion</string>
     <string name="descendentemente_por_nombre">Descendentemente por Nombre</string>
     <string name="descendentemente_por_duracion">Descendentemente por Duracion</string>
+    <string name="autor">Autor</string>
+    <string name="titulo_cancion">Titulo Cancion</string>
+    <string name="a_o">Año</string>
+    <string name="duracion">Duracion</string>
+    <string name="cancion">Cancion</string>
+    <string name="para_gregar_la_cancion_encontrada_a_la_playlist_de_click_en_el_item_de_la_cancion">Para gregar la cancion encontrada a la playlist de click en el item de la cancion</string>
+    <string name="ingrese_aqui_abajo_el_nombre_de_la_cancion_que_desee_buscar">Ingrese aqui abajo el nombre de la cancion que desee buscar</string>
 </resources>

@@ -8,6 +8,12 @@
     tools:context=".MainActivity"
     tools:layout_editor_absoluteY="81dp">
 
+    <TextView
+        android:id="@+id/labelInfo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ingrese_aqui_abajo_el_nombre_de_la_cancion_que_desee_buscar" />
+
     <EditText
         android:id="@+id/txtNombre"
         android:layout_width="340dp"
@@ -32,6 +38,12 @@
         android:layout_height="wrap_content"
         android:text="@string/busqueda"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+    <TextView
+        android:id="@+id/labelInfo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/para_gregar_la_cancion_encontrada_a_la_playlist_de_click_en_el_item_de_la_cancion" />
 
     <ListView
         android:id="@+id/lstBusqueda"
@@ -90,7 +102,7 @@
     <ListView
         android:id="@+id/lstCanciones"
         android:layout_width="368dp"
-        android:layout_height="318dp"
+        android:layout_height="127dp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="341dp" />
 </LinearLayout>

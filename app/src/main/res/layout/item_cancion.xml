@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/nomCancion"
-        android:text="Autor" />
+        android:text="@string/autor" />
 
     <TextView
         android:id="@+id/nomCancion"
@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="Titulo Cancion"
+        android:text="@string/titulo_cancion"
         android:textAppearance="@android:style/TextAppearance"
         android:layout_alignParentStart="true" />
 
@@ -26,19 +26,19 @@
         android:id="@+id/durCancion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignTop="@+id/auCancion"
-        android:layout_marginStart="114dp"
-        android:layout_marginLeft="114dp"
-        android:text="Duracion" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/duracion" />
 
     <TextView
         android:id="@+id/annoCancion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/auCancion"
-        android:layout_centerHorizontal="true"
-        android:text="Año" />
+        android:layout_marginEnd="86dp"
+        android:layout_marginRight="86dp"
+        android:text="@string/a_o" />
 
 </RelativeLayout>
