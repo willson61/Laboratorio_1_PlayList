@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                         message1.show();
                     }
                 }
+                rgOrden.clearCheck();
                 break;
             case R.id.btAscendenteNom:
                 Ordenamiento.ordenamientoAscC(lstPlaylist);
@@ -103,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
                 Ordenamiento.ordenamientoAscC(lstPlaylist);
                 lstCanciones.setAdapter(adapter2);
             }
-            lstCanciones.setAdapter(adapter2);
         }
     }
 }
